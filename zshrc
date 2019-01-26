@@ -20,5 +20,10 @@ prompt pure
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
+# asdf
+. $HOME/.asdf/asdf.sh
+
+. $HOME/.asdf/completions/asdf.bash
+
 # aliases
 [[ -f ~/.aliases ]] && source ~/.aliases
