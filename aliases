@@ -1,0 +1,9 @@
+# Unix
+alias ll="ls -alh"
+
+# Reload ZSH
+alias z="source $HOME/.zshrc"
+
+# Misc
+alias notes="cd $HOME/Dropbox/notes"
+alias dots="cd $HOME/.dotfiles"
