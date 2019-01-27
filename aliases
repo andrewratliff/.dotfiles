@@ -5,11 +5,12 @@ alias v="nvim"
 # Reload ZSH
 alias z="source $HOME/.zshrc"
 
-# Misc
-alias notes="cd $HOME/Dropbox/notes"
-alias dots="cd $HOME/.dotfiles"
-
 # Vim
 alias vimdiff="nvim -d"
 alias linkvim="ln -s $HOME/.vim $HOME/.config/nvim"
 alias linkvimrc="ln -s $HOME/.vimrc $HOME/.config/nvim/init.vim"
+
+# Misc
+alias notes="cd $HOME/Dropbox/notes"
+alias dots="cd $HOME/.dotfiles"
+alias work="cd $HOME/src/commonlit/commonlit"
