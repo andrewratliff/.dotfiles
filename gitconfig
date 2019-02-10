@@ -10,6 +10,3 @@
 
 [commit]
   template = ~/.gitmessage
-
-[alias]
-  co = checkout

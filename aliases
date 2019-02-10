@@ -10,6 +10,10 @@ alias vimdiff="nvim -d"
 alias linkvim="ln -s $HOME/.vim $HOME/.config/nvim"
 alias linkvimrc="ln -s $HOME/.vimrc $HOME/.config/nvim/init.vim"
 
+# Git
+alias br="git branch -vv"
+alias co="git co"
+
 # Misc
 alias notes="cd $HOME/Dropbox/notes"
 alias dots="cd $HOME/.dotfiles"
