@@ -17,4 +17,3 @@ alias co="git co"
 # Misc
 alias notes="cd $HOME/Dropbox/notes"
 alias dots="cd $HOME/.dotfiles"
-alias work="cd $HOME/src/commonlit/commonlit"
