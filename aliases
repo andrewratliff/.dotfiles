@@ -17,3 +17,4 @@ alias co="git co"
 # Misc
 alias notes="cd $HOME/Dropbox/notes"
 alias dots="cd $HOME/.dotfiles"
+alias xclip="xclip -selection c"
