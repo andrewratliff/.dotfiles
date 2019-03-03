@@ -1,14 +1,12 @@
 # Unix
 alias ll="ls -alh"
-alias v="nvim"
+alias v="vim"
 
 # Reload ZSH
 alias z="source $HOME/.zshrc"
 
 # Vim
-alias vimdiff="nvim -d"
-alias linkvim="ln -s $HOME/.vim $HOME/.config/nvim"
-alias linkvimrc="ln -s $HOME/.vimrc $HOME/.config/nvim/init.vim"
+alias vimdiff="vim -d"
 
 # Git
 alias br="git branch -vv"

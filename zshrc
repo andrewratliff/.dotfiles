@@ -29,3 +29,5 @@ prompt pure
 
 # syntax highlighting
 source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
+export FZF_DEFAULT_COMMAND='ack -f'
