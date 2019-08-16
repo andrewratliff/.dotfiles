@@ -404,9 +404,6 @@ nnoremap <Leader>n :%s/\(<c-r>=expand("<cword>")<CR>\)/
 " === Edit the db/schema.rb Rails file in a split ===
 nnoremap <Leader>sc :vsplit db/schema.rb<CR>
 
-" === notes ===
-nnoremap <Leader>ww :tabe <C-r>=expand("$HOME/dotfiles/laptop/vim_notes/")<CR><C-d>
-
 " === Pre-populate a split command with the current directory ===
 nnoremap <Leader>e :vsp <C-r>=expand("%:p:h") . "/" <CR><C-d>
 
