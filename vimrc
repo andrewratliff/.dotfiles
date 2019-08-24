@@ -62,7 +62,7 @@ set clipboard^=unnamedplus " copy paste to system clipboard
 set colorcolumn=+1 " highlight column after 'textwidth'
 set background=dark " Use colors that look good on a dark background
 colorscheme sourcerer
-set cursorline
+" set cursorline
 set diffopt+=vertical " Start diff mode with vertical splits
 set expandtab " Use the appropriate number of spaces to insert a <Tab>.
 filetype plugin indent on " load indent file for language
