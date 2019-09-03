@@ -23,6 +23,7 @@ prompt pure
 # asdf
 . $HOME/.asdf/asdf.sh
 . $HOME/.asdf/completions/asdf.bash
+export NODEJS_CHECK_SIGNATURES=no
 
 # aliases
 [[ -f ~/.aliases ]] && source ~/.aliases
