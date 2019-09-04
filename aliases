@@ -1,6 +1,6 @@
 # Unix
 alias ll="ls -alh"
-alias v="vim"
+alias v="nvim"
 
 # Reload ZSH
 alias z="source $HOME/.zshrc"

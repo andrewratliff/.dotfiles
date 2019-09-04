@@ -18,7 +18,23 @@ export PATH=/home/andrew/.local/bin:$PATH
 autoload -U promptinit && promptinit
 prompt pure
 
+# fzf
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+export FZF_DEFAULT_COMMAND='rg --files --hidden --glob \!.git'
+export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
+
+_fzf_compgen_path() {
+  rg --files "$1" | with-dir "$1"
+}
+
+# Use rg to generate the list for directory completion
+_fzf_compgen_dir() {
+  rg --files "$1" | only-dir "$1"
+}
+
+export FZF_DEFAULT_OPTS='
+  --color=dark
+'
 
 # asdf
 . $HOME/.asdf/asdf.sh
@@ -28,8 +44,6 @@ export NODEJS_CHECK_SIGNATURES=no
 # aliases
 [[ -f ~/.aliases ]] && source ~/.aliases
 
-
-export FZF_DEFAULT_COMMAND='ack -f'
 
 # syntax highlighting
 source /home/andrew/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
