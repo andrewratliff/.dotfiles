@@ -1,6 +1,7 @@
 # Unix
 alias ll="ls -alh"
 alias v="nvim"
+alias vim="nvim"
 
 # Reload ZSH
 alias z="source $HOME/.zshrc"
@@ -17,4 +18,4 @@ alias notes="cd $HOME/Dropbox/notes"
 alias dots="cd $HOME/.dotfiles"
 alias xclip="xclip -selection c"
 alias launch="cd $HOME/src/launchschool"
-alias cl="cd $HOME/src/commonlit"
+alias cl="cd $HOME/src/commonlit/commonlit"
