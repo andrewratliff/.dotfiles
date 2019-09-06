@@ -48,4 +48,6 @@ export NODEJS_CHECK_SIGNATURES=no
 # syntax highlighting
 source /home/andrew/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
+export VISUAL=nvim
+export EDITOR="$VISUAL"
 export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
