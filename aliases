@@ -9,13 +9,7 @@ alias z="source $HOME/.zshrc"
 # Vim
 alias vimdiff="vim -d"
 
-# Git
-alias br="git branch -vv"
-alias co="git co"
-
 # Misc
-alias notes="cd $HOME/Dropbox/notes"
 alias dots="cd $HOME/.dotfiles"
-alias xclip="xclip -selection c"
 alias launch="cd $HOME/src/launchschool"
 alias cl="cd $HOME/src/commonlit/commonlit"
