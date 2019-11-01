@@ -44,10 +44,9 @@ export NODEJS_CHECK_SIGNATURES=no
 # aliases
 [[ -f ~/.aliases ]] && source ~/.aliases
 
-
-# syntax highlighting
-source /home/andrew/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-
 export VISUAL=nvim
 export EDITOR="$VISUAL"
 export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
+#
+# syntax highlighting
+source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
