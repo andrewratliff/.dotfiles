@@ -10,8 +10,8 @@ alias z="source $HOME/.zshrc"
 alias vimdiff="vim -d"
 
 # Misc
-alias dots="cd $HOME/.dotfiles"
-alias launch="cd $HOME/src/launchschool"
-alias cl="cd $HOME/src/commonlit/commonlit"
-alias notes="cd $HOME/Dropbox/notes"
 alias pdf="evince"
+alias dots="cd $HOME/.dotfiles"
+alias launch="cd $LAUNCH"
+alias cl="cd $WORK"
+alias notes="cd $NOTES"
