@@ -1,8 +1,12 @@
 # Unix
 alias ll="ls -alh"
+alias ls="ls -FGhl"
 alias open="xdg-open"
 alias v="nvim"
 alias vim="nvim"
+
+# Pretty print the path
+alias path='echo $PATH | tr -s ":" "\n"'
 
 # Reload ZSH
 alias z="source $HOME/.zshrc"
@@ -13,6 +17,6 @@ alias vimdiff="vim -d"
 # Misc
 alias pdf="evince"
 alias dots="cd $HOME/.dotfiles"
-alias launch="cd $LAUNCH"
-alias cl="cd $WORK"
-alias notes="cd $NOTES"
+alias launch="cd $HOME/src/launchschool"
+alias cl="cd $HOME/src/commonlit/commonlit"
+alias notes="cd $HOME/Drive/notes"

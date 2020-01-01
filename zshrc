@@ -44,8 +44,6 @@ export NODEJS_CHECK_SIGNATURES=no
 # aliases
 [[ -f ~/.aliases ]] && source ~/.aliases
 
-source ~/.env
-
 export VISUAL=nvim
 export EDITOR="$VISUAL"
 export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
