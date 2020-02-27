@@ -1,5 +1,6 @@
 -- https://thoughtbot.com/blog/an-explained-psqlrc
 -- https://www.citusdata.com/blog/2017/07/16/customizing-my-postgres-shell-using-psqlrc/
+-- http://www.craigkerstiens.com/2013/02/21/more-out-of-psql/
 
 \set COMP_KEYWORD_CASE preserve-upper
 \set ON_ERROR_ROLLBACK interactive
