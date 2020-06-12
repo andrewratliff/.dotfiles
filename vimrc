@@ -534,7 +534,7 @@ endif
 " tnoremap <C-w>\ <C-\><C-n>:vsp<CR>:terminal<CR>
 " nnoremap <C-w>- :20sp<CR>:terminal<CR>
 " nnoremap <C-w>\ :vsp<CR>:terminal<CR>
-" nnoremap <C-w>c :tabnew<CR>:terminal<CR>
+nnoremap <C-w>c :tabnew<CR>:terminal<CR>
 
 " === Move up and down by visible lines if current line is wrapped ===
 nnoremap j gj
