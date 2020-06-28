@@ -7,9 +7,6 @@ bindkey -v
 # End of lines configured by zsh-newuser-install
 # The following lines were added by compinstall
 zstyle :compinstall filename '/home/andrew/.zshrc'
-
-autoload -Uz compinit
-compinit
 # End of lines added by compinstall
 
 export PATH=/home/andrew/.local/bin:$PATH
@@ -36,17 +33,20 @@ export FZF_DEFAULT_OPTS='
   --color=dark
 '
 
-# asdf
-. $HOME/.asdf/asdf.sh
-. $HOME/.asdf/completions/asdf.bash
-export NODEJS_CHECK_SIGNATURES=no
-
-# aliases
-[[ -f ~/.aliases ]] && source ~/.aliases
-
 export VISUAL=nvim
 export EDITOR="$VISUAL"
 export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
 
 # syntax highlighting
 source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
+# asdf
+. $HOME/.asdf/asdf.sh
+fpath=(${HOME}/.asdf/completions $fpath)
+export NODEJS_CHECK_SIGNATURES=no
+
+# aliases
+[[ -f ~/.aliases ]] && source ~/.aliases
+
+autoload -Uz compinit
+compinit
