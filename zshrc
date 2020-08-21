@@ -48,5 +48,16 @@ export NODEJS_CHECK_SIGNATURES=no
 # aliases
 [[ -f ~/.aliases ]] && source ~/.aliases
 
+# helper functions
+
+# searching rails routes
+rr() {
+  if [ -n "$1" ]; then
+    rails routes | grep "$1"
+  else
+    rails routes
+  fi
+}
+
 autoload -Uz compinit
 compinit
