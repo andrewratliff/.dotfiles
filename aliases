@@ -20,3 +20,12 @@ alias dots="cd $HOME/.dotfiles"
 alias launch="cd $HOME/src/launchschool"
 alias cl="cd $HOME/src/commonlit/commonlit"
 alias notes="cd $HOME/Drive/notes"
+
+alias pix="cd $HOME/pix/"
+
+alias cpraw="rsync -ahv /media/andrew/disk/DCIM/692_FUJI/D*.raw"
+alias cpjpg="rsync -ahv /media/andrew/disk/DCIM/692_FUJI/D*.jpg"
+alias seagatebackup="rsync -ahv $HOME/pix/* /media/andrew/seagate/photos/pix/"
+# TODO: alias cpraw="rsync -ahv /media/andrew/disk/DCIM/692_FUJI/D*.video???"
+
+# TODO: create folder structure

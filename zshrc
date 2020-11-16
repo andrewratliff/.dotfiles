@@ -45,6 +45,9 @@ source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 fpath=(${HOME}/.asdf/completions $fpath)
 export NODEJS_CHECK_SIGNATURES=no
 
+# prevent webpack sigbarts
+export NODE_OPTIONS='--max_old_space_size=16384'
+
 # aliases
 [[ -f ~/.aliases ]] && source ~/.aliases
 
