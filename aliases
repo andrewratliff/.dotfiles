@@ -25,7 +25,7 @@ alias pix="cd $HOME/pix/"
 
 alias cpraw="rsync -ahv /media/andrew/disk/DCIM/692_FUJI/D*.raw"
 alias cpjpg="rsync -ahv /media/andrew/disk/DCIM/692_FUJI/D*.jpg"
-alias seagatebackup="rsync -ahv $HOME/pix/* /media/andrew/seagate/photos/pix/"
+alias seagatebackup="rsync -ahv $HOME/pix/* /media/andrew/seagate/photos/pix/ --delete"
 # TODO: alias cpraw="rsync -ahv /media/andrew/disk/DCIM/692_FUJI/D*.video???"
 
 # TODO: create folder structure
