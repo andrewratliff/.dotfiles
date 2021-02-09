@@ -538,7 +538,7 @@ nnoremap <Leader>n :%s/\(<c-r>=expand("<cword>")<CR>\)/
 nnoremap <Leader>js :12sp<CR>:terminal node %<CR>
 
 " === Make it easier to run ruby files inside vim ===
-nnoremap <Leader>rb :12sp<CR>:terminal ruby -w %<CR>
+nnoremap <Leader>rb :20sp<CR>:terminal ruby -w %<CR>
 
 " === Make it easier to run typescript files inside vim ===
 nnoremap <Leader>c :12sp<CR>:terminal tsc %<CR>
