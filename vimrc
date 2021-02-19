@@ -276,7 +276,7 @@ let g:closetag_filenames = '*.html,*.erb,*.jsx,*.js,*.tsx,*.ts'
 
 " === coc.nvim ===
 " highlight groups
-hi default CocUnderline cterm=bold gui=bold
+" hi default CocUnderline cterm=italic gui=italic
 hi CocErrorSign guifg=#ff8700
 hi CocInfoSign  guifg=#87ceeb
 
