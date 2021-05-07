@@ -45,14 +45,12 @@ Plug 'https://github.com/alvan/vim-closetag'
 Plug 'https://github.com/ap/vim-css-color', { 'for': 'css' }
 Plug 'https://github.com/janko-m/vim-test'
 Plug 'https://github.com/powerman/vim-plugin-AnsiEsc'
-Plug 'https://github.com/rhysd/devdocs.vim'
 Plug 'https://github.com/rstacruz/vim-closer'
 Plug 'https://github.com/stefandtw/quickfix-reflector.vim'
 Plug 'https://github.com/tpope/vim-commentary'
 Plug 'https://github.com/tpope/vim-dispatch'
 Plug 'https://github.com/tpope/vim-endwise'
 Plug 'https://github.com/tweekmonster/startuptime.vim'
-Plug 'preservim/nerdtree'
 
 call plug#end()
 
@@ -331,9 +329,6 @@ xnoremap <C-\> :Commentary<CR>
 
 " === vim-cool ===
 let g:CoolTotalMatches = 1
-
-" === devdocs ===
-nmap <silent> K <Plug>(devdocs-under-cursor)
 
 " === fugitive ===
 nnoremap <Leader>g :Git<SPACE>
