@@ -18,10 +18,11 @@ alias vimdiff="vim -d"
 alias pdf="evince"
 alias dots="cd $HOME/.dotfiles"
 alias launch="cd $HOME/src/launchschool"
-alias cl="cd $HOME/src/commonlit/commonlit"
 alias notes="cd $HOME/Drive/notes"
 
 alias pix="cd $HOME/pix/"
 
+alias seagatetosandisk="rsync -ahv --exclude 'videos' /media/seagate/* /media/andrew/sandisk/ --delete"
 alias seagatebackup="rsync -ahv $HOME/pix/* /media/seagate/photos/pix/ --delete"
 alias lgbackup="rsync -ahv $HOME/pix/* /media/sd/pix/ --delete"
+alias datatowd="rsync -ahv /mnt/data/* /mnt/wdgreen/ --delete"

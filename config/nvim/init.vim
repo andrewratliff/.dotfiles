@@ -23,6 +23,7 @@ Plug 'https://github.com/junegunn/gv.vim'
 Plug 'https://github.com/tpope/vim-fugitive'
 Plug 'https://github.com/tpope/vim-rhubarb'
 Plug 'https://github.com/sindrets/diffview.nvim'
+Plug 'https://github.com/nvim-lua/plenary.nvim'
 Plug 'https://github.com/kyazdani42/nvim-web-devicons'
 
 " === language plugins ===
