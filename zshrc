@@ -62,5 +62,9 @@ rr() {
   fi
 }
 
+# fly.io vars
+export FLYCTL_INSTALL="/home/andrew/.fly"
+export PATH="$FLYCTL_INSTALL/bin:$PATH"
+
 autoload -Uz compinit
 compinit

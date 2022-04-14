@@ -36,6 +36,7 @@ Plug 'https://github.com/othree/html5.vim'
 Plug 'https://github.com/pangloss/vim-javascript'
 Plug 'https://github.com/tpope/vim-rails'
 Plug 'https://github.com/rust-lang/rust.vim'
+Plug 'https://github.com/pantharshit00/vim-prisma'
 
 " === other ===
 if has('nvim')
