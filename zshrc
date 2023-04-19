@@ -66,5 +66,8 @@ rr() {
 export FLYCTL_INSTALL="/home/andrew/.fly"
 export PATH="$FLYCTL_INSTALL/bin:$PATH"
 
+# lua
+export PATH="$HOME/.luarocks/bin:$PATH"
+
 autoload -Uz compinit
 compinit

@@ -22,7 +22,7 @@ Plug 'https://github.com/airblade/vim-gitgutter'
 Plug 'https://github.com/junegunn/gv.vim'
 Plug 'https://github.com/tpope/vim-fugitive'
 Plug 'https://github.com/tpope/vim-rhubarb'
-Plug 'https://github.com/sindrets/diffview.nvim'
+" Plug 'https://github.com/sindrets/diffview.nvim'
 Plug 'https://github.com/nvim-lua/plenary.nvim'
 Plug 'https://github.com/kyazdani42/nvim-web-devicons'
 
@@ -52,6 +52,7 @@ Plug 'https://github.com/stefandtw/quickfix-reflector.vim'
 Plug 'https://github.com/tpope/vim-commentary'
 Plug 'https://github.com/tpope/vim-dispatch'
 Plug 'https://github.com/tpope/vim-endwise'
+Plug 'https://github.com/tpope/vim-surround'
 Plug 'https://github.com/tweekmonster/startuptime.vim'
 
 call plug#end()
@@ -449,40 +450,39 @@ let g:test#strategy = 'dispatch'
 let g:test#runner_commands = ['Jest', 'RSpec']
 
 " === diffview ===
-lua << EOF
-  local cb = require'diffview.config'.diffview_callback
-
-  require'diffview'.setup {
-    diff_binaries = false,    -- Show diffs for binaries
-    file_panel = {
-      width = 35,
-      use_icons = true        -- Requires nvim-web-devicons
-    },
-    key_bindings = {
-      -- The `view` bindings are active in the diff buffers, only when the current
-      -- tabpage is a Diffview.
-      view = {
-        ["<tab>"]     = cb("select_next_entry"),  -- Open the diff for the next file
-        ["<s-tab>"]   = cb("select_prev_entry"),  -- Open the diff for the previous file
-        ["<leader>e"] = cb("focus_files"),        -- Bring focus to the files panel
-        ["<leader>b"] = cb("toggle_files"),       -- Toggle the files panel.
-      },
-      file_panel = {
-        ["j"]         = cb("next_entry"),         -- Bring the cursor to the next file entry
-        ["<down>"]    = cb("next_entry"),
-        ["k"]         = cb("prev_entry"),         -- Bring the cursor to the previous file entry.
-        ["<up>"]      = cb("prev_entry"),
-        ["<cr>"]      = cb("select_entry"),       -- Open the diff for the selected entry.
-        ["o"]         = cb("select_entry"),
-        ["R"]         = cb("refresh_files"),      -- Update stats and entries in the file list.
-        ["<tab>"]     = cb("select_next_entry"),
-        ["<s-tab>"]   = cb("select_prev_entry"),
-        ["<leader>e"] = cb("focus_files"),
-        ["<leader>b"] = cb("toggle_files"),
-      }
-    }
-  }
-EOF
+" lua << EOF
+"   local cb = require'diffview.config'.diffview_callback
+"   require'diffview'.setup {
+"     diff_binaries = false,    -- Show diffs for binaries
+"     file_panel = {
+"       width = 35,
+"       use_icons = true        -- Requires nvim-web-devicons
+"     },
+"     key_bindings = {
+"       -- The `view` bindings are active in the diff buffers, only when the current
+"       -- tabpage is a Diffview.
+"       view = {
+"         ["<tab>"]     = cb("select_next_entry"),  -- Open the diff for the next file
+"         ["<s-tab>"]   = cb("select_prev_entry"),  -- Open the diff for the previous file
+"         ["<leader>e"] = cb("focus_files"),        -- Bring focus to the files panel
+"         ["<leader>b"] = cb("toggle_files"),       -- Toggle the files panel.
+"       },
+"       file_panel = {
+"         ["j"]         = cb("next_entry"),         -- Bring the cursor to the next file entry
+"         ["<down>"]    = cb("next_entry"),
+"         ["k"]         = cb("prev_entry"),         -- Bring the cursor to the previous file entry.
+"         ["<up>"]      = cb("prev_entry"),
+"         ["<cr>"]      = cb("select_entry"),       -- Open the diff for the selected entry.
+"         ["o"]         = cb("select_entry"),
+"         ["R"]         = cb("refresh_files"),      -- Update stats and entries in the file list.
+"         ["<tab>"]     = cb("select_next_entry"),
+"         ["<s-tab>"]   = cb("select_prev_entry"),
+"         ["<leader>e"] = cb("focus_files"),
+"         ["<leader>b"] = cb("toggle_files"),
+"       }
+"     }
+"   }
+" EOF
 
 " update jest snapshots with vim-test
 nnoremap <Leader>u :Jest <C-r>=escape(expand("%"), ' ') . ' ' . '--updateSnapshot'<CR><CR>
