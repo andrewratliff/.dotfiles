@@ -1,9 +1,10 @@
 # Unix
 alias ll="ls -alh"
-alias ls="ls -FGhl"
+alias ls="exa --all --icons"
+alias cat="batcat"
+
 alias open="xdg-open"
 alias v="nvim"
-alias vim="nvim"
 
 # Pretty print the path
 alias path='echo $PATH | tr -s ":" "\n"'

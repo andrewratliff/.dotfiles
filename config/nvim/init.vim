@@ -28,7 +28,8 @@ Plug 'https://github.com/kyazdani42/nvim-web-devicons'
 
 " === language plugins ===
 Plug 'https://github.com/hail2u/vim-css3-syntax'
-Plug 'https://github.com/iamcco/markdown-preview.nvim', { 'do': 'cd app & yarn install'  }
+" Plug 'https://github.com/iamcco/markdown-preview.nvim', { 'do': 'cd app & yarn install'  }
+Plug 'instant-markdown/vim-instant-markdown', {'for': 'markdown', 'do': 'yarn install'}
 Plug 'https://github.com/leafgarland/typescript-vim'
 Plug 'https://github.com/maxmellon/vim-jsx-pretty'
 Plug 'https://github.com/HerringtonDarkholme/yats.vim'
@@ -54,6 +55,7 @@ Plug 'https://github.com/tpope/vim-dispatch'
 Plug 'https://github.com/tpope/vim-endwise'
 Plug 'https://github.com/tpope/vim-surround'
 Plug 'https://github.com/tweekmonster/startuptime.vim'
+Plug 'preservim/nerdtree'
 
 call plug#end()
 
