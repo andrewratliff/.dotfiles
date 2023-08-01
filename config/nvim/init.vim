@@ -53,7 +53,8 @@ Plug 'https://github.com/tpope/vim-dispatch'
 Plug 'https://github.com/tpope/vim-endwise'
 Plug 'https://github.com/tpope/vim-surround'
 Plug 'https://github.com/tweekmonster/startuptime.vim'
-Plug 'preservim/nerdtree'
+Plug 'https://github.com/preservim/nerdtree'
+Plug 'https://github.com/wuelnerdotexe/vim-astro'
 
 call plug#end()
 
