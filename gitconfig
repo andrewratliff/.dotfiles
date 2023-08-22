@@ -16,3 +16,9 @@
 
 [init]
   defaultBranch = main
+
+[pull]
+  rebase = true
+
+[rebase]
+  autosquash = true
