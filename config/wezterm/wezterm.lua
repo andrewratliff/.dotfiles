@@ -15,7 +15,7 @@ config = {
   color_scheme = 'GitHub Dark',
   enable_scroll_bar = false,
   enable_tab_bar = true,
-  font = wezterm.font("JetBrainsMono Nerd Font", { weight = "Medium" }),
+  font = wezterm.font("CaskaydiaCove Nerd Font"),
   font_size = 14.0,
   hide_tab_bar_if_only_one_tab = true,
   scrollback_lines = 100000,
