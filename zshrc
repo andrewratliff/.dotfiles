@@ -12,6 +12,7 @@ zstyle :compinstall filename '/home/andrew/.zshrc'
 export PATH=/home/andrew/.local/bin:$PATH
 
 # Pure: Pretty, minimal and fast ZSH prompt
+fpath+=($HOME/.zsh/pure)
 autoload -U promptinit && promptinit
 prompt pure
 
@@ -36,9 +37,6 @@ export FZF_DEFAULT_OPTS='
 export VISUAL=nvim
 export EDITOR="$VISUAL"
 export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
-
-# syntax highlighting
-source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 # asdf
 . $HOME/.asdf/asdf.sh
@@ -71,3 +69,4 @@ export PATH="$HOME/.luarocks/bin:$PATH"
 
 autoload -Uz compinit
 compinit
+source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
