@@ -1,6 +1,6 @@
 # Unix
-alias ll="ls -alh"
-alias ls="exa --all --icons"
+alias ll="eza -alh --icons"
+alias ls="eza --all --icons"
 alias cat="batcat"
 
 alias open="xdg-open"
