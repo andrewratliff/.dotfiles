@@ -1,7 +1,7 @@
 # Unix
 alias ll="eza -alh --icons"
 alias ls="eza --all --icons"
-alias cat="batcat"
+alias cat="bat"
 
 alias open="xdg-open"
 alias v="nvim"
